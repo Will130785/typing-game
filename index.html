@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typing Game</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <nav class="navbar">
+      <div class="form-group">
+        <label for="difficulty">Difficulty:</label>
+        <select id="difficulty">
+          <option value="">Select difficulty:</option>
+          <option value="Easy">Easy</option>
+          <option value="Medium">Medium</option>
+          <option value="Hard">Hard</option>
+        </select>
+      </div>
+    </nav>
+    <main class="main-container">
+      <section class="game-panel">
+        <div class="game-panel-heading">
+          <h1>Speed Typer</h1>
+        </div>
+        <div class="game-panel-body">
+          <div class="game-panel-body-top">
+            <span>Time left: <span class="timer"></span></span>
+            <span>Score: <span class="score"></span></span>
+          </div>
+          <div class="game-panel-body-bottom">
+            <p>Type the following:</p>
+            <h2 class="word">A Word</h2>
+            <input id="type-input" type="text" />
+            <button class="start-reload">Start</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="toggle">
+        <button class="toggle-btn">O</button>
+      </div>
+    </footer>
+  <script src="app.js"></script>
+</body>
+</html>
