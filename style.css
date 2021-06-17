@@ -23,6 +23,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all .3s;
+}
+
+.navbar select {
+  width: 30rem;
+  padding: 1rem;
 }
 
 .main-container {
@@ -43,14 +49,17 @@ body {
 
 .game-panel-heading {
   width: 100%;
-  padding: 1rem 0;
+  padding: 2rem 0;
   text-align: center;
+  font-size: 2rem;
 }
 
 .game-panel-body-top {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
 }
 
 .game-panel-body-bottom {
@@ -58,7 +67,49 @@ body {
   text-align: center;
 }
 
+.game-panel-body-bottom p {
+  font-size: 1.4rem;
+}
+
+.word {
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container input {
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.input-container button {
+  padding: 1rem;
+  cursor: pointer;
+}
+
 .toggle {
   position: relative;
   bottom: 10rem;
+  cursor: pointer;
+}
+
+.toggle button {
+  padding: 1rem;
+  border-radius: 100%;
+}
+
+.message-container {
+  margin: 2rem 0;
+}
+
+.message-win {
+  visibility: hidden;
+}
+
+.message-lose {
+  visibility: hidden;
 }

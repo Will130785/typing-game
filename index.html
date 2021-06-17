@@ -10,7 +10,6 @@
 <body>
     <nav class="navbar">
       <div class="form-group">
-        <label for="difficulty">Difficulty:</label>
         <select id="difficulty">
           <option value="">Select difficulty:</option>
           <option value="Easy">Easy</option>
@@ -26,14 +25,20 @@
         </div>
         <div class="game-panel-body">
           <div class="game-panel-body-top">
-            <span>Time left: <span class="timer"></span></span>
-            <span>Score: <span class="score"></span></span>
+            <span>Time left: <span class="timer">10</span></span>
+            <span>Score: <span class="score">0</span></span>
           </div>
           <div class="game-panel-body-bottom">
             <p>Type the following:</p>
             <h2 class="word">A Word</h2>
-            <input id="type-input" type="text" />
-            <button class="start-reload">Start</button>
+            <div class="input-container">
+              <input id="type-input" type="text" />
+              <button class="start-reload">Start</button>
+            </div>
+            <div class="message-container">
+              <p class="message-win">Congratulations, you have completed the game</p>
+              <p class="message-lose">You have lost'</p>
+            </div>
           </div>
         </div>
       </section>
